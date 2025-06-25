@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Frases do Dia</string>
+
+    <string-array name="frases_motivacao">
+        <item>"A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original." – Albert Einstein</item>
+        <item>"A ciência é a tentativa de tornar o caos da nossa experiência o mais simples e compreensível possível." – J. Robert Oppenheimer</item>
+        <item>"Nada na vida deve ser temido, apenas compreendido. Agora é hora de compreender mais para temer menos." – Marie Curie</item>
+        <item>"A ausência de evidência não é evidência de ausência." – Carl Sagan</item>
+        <item>"Se soubermos exatamente o que estamos fazendo, não se chama pesquisa." – Albert Einstein</item>
+        <item>"O importante é nunca parar de questionar." – Albert Einstein</item>
+        <item>"A ciência é mais do que um corpo de conhecimentos, é uma maneira de pensar." – Carl Sagan</item>
+        <item>"A física é como o sexo: pode até ter alguma utilidade, mas não é por isso que a fazemos." – Richard Feynman</item>
+        <item>"Aprender sem pensar é esforço perdido; pensar sem aprender é perigoso." – Confúcio</item>
+        <item>"O maior inimigo do conhecimento não é a ignorância, mas a ilusão do conhecimento." – Stephen Hawking</item>
+        <item>"A educação é o que resta depois de se esquecer tudo que se aprendeu na escola." – Albert Einstein</item>
+        <item>"O primeiro princípio é que você não deve enganar a si mesmo – e você é a pessoa mais fácil de enganar." – Richard Feynman</item>
+        <item>"O futuro pertence àqueles que acreditam na beleza de seus sonhos." – Eleanor Roosevelt</item>
+        <item>"Você não pode ensinar nada a um homem; você pode apenas ajudá-lo a encontrar a resposta dentro dele mesmo." – Galileu Galilei</item>
+        <item>"O maior milagre da ciência moderna é mostrar que o universo é compreensível." – Eugene Wigner</item>
+        <item>"Para cada problema complexo, há uma resposta clara, simples e errada." – H. L. Mencken</item>
+        <item>"A imaginação é mais importante que o conhecimento." – Albert Einstein</item>
+        <item>"O conhecimento é limitado, mas a imaginação abraça o mundo." – Albert Einstein</item>
+        <item>"A ciência sem religião é manca, a religião sem ciência é cega." – Albert Einstein</item>
+        <item>"Não sou o que aconteceu comigo, sou o que escolhi me tornar." – Carl Jung</item>
+    </string-array>
+
+</resources>
