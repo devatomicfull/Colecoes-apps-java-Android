@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/ic_dog"
+        android:backgroundTint="@color/red"
+        android:backgroundTintMode="screen"
+        android:clickable="false"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:clickable="false"
+        android:padding="5dp"
+        android:text="Descubra quantos anos tem seu chachorro em Idade Humana"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Quantos anos de vida Tem o seu Cachorro?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:clickable="true"
+        android:textColorHint="@color/ciano"
+        android:textColor="@color/ciano"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Descobri"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIdade"
+        app:layout_constraintStart_toStartOf="@+id/editTextIdade"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdade"
+        android:fontFamily="@font/ennobled"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="0dp"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="false"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_rounded_background"
+        android:padding="9dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalculadora"
+        app:layout_constraintStart_toStartOf="@+id/btnCalculadora"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculadora" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
 ## Sumário
 
 - [Frases inspiradoras e motivacionais de forma aleatórias](#app1)
+- [Informe quanto anos tem seu cachorro e descubra a idade humana dele](#app2)
 
 ---
 
@@ -18,6 +19,22 @@ O **Frases do Dia** é um aplicativo educativo e motivacional que exibe, a cada 
 |--------------|---------------|
 | ![Tela Inicial](apps/app1/demonstr1.png) | ![Frase Exibida](apps/app1/demonstr2.png) |
 
+---
+## <a id="app2"></a> Tópico 2: Idade de Cachorro
+
+O **Idade de Cachorro** é um aplicativo para você descobrir qual é a idade do seu cachorro em idade humana.
+**1 ano do seu cachorro equivale a 7 anos humanos!**
+[Demonstração](#demonstracao2)
 
 ---
+
+## <a id="demonstracao2"></a> Tela
+
+| Tela Inicial | Idade Exibida |
+|--------------|---------------|
+| ![Tela Inicial](apps/app2/demonstr1.png) | ![Idade Exibida](apps/app2/demonstr2.png) |
+
+---
+
+
 
