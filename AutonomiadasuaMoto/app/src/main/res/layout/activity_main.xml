@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Seu tanque tem quantos Litros"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:prefixText="⛽ L:"
+            app:errorEnabled="true"
+            app:helperText=" 16.1 Litros"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/filledTextField_LitrosNoTanque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="Litros Consumido"
+            app:prefixText="⛽ L:"
+            app:errorEnabled="true"
+            app:helperText=" 5 Litros"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/filledTextField_LitrosConsumido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:digits="0123456789." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="Km - Inicial"
+            app:errorEnabled="true"
+            app:prefixText="🚗 Km: "
+            app:helperText=" 0 - Km"
+            app:helperTextEnabled="true"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/filledTextField_KmInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="Km - Percorrida Final"
+            app:errorEnabled="true"
+            app:helperText=" 200 - Km"
+            app:helperTextEnabled="true"
+            app:prefixText="🚗 Km: ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/filledTextField_KmPercorridoFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcularDesempenho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="calcular"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TableLayout
+        android:id="@+id/tabelaResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcularDesempenho"
+        app:layout_constraintVertical_bias="0.46">
+
+        <TableRow>
+
+            <TextView
+                android:padding="8dp"
+                android:text="Distância Percorrida (km):"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDistanciaPercorrida"
+                android:padding="8dp"
+                android:text="---" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="8dp"
+                android:text="Autonomia Total dos Litros Consumidos:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAutomiaDosLitros"
+                android:padding="8dp"
+                android:text="---" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="8dp"
+                android:text="Autonomia Máxima Tanque Cheio:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAutonomiaMaxima"
+                android:padding="8dp"
+                android:text="---"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
