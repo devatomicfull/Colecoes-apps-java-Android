@@ -53,9 +53,9 @@ Esse app é útil para motoristas e motociclistas que querem controlar seu consu
 
 ## <a id="demonstracao3"></a> Tela
 
-| Tela Inicial                        | Erro                              | Resultado                             |
-|-------------------------------------|-----------------------------------|---------------------------------------|
-| ![Inicial](apps/app3/demonstr1.png) | ![Erro ](apps/app3/demonstr2.png) | ![Resultado](apps/app3/demonstr3.png) |
+| Tela Inicial                          | Erro                                  | Resultado                             |
+|---------------------------------------|---------------------------------------|---------------------------------------|
+| ![Inicial](apps/app3/demonstr1.png)   | ![Erro ](apps/app3/demonstr2.png)     | ![Resultado](apps/app3/demonstr3.png) |
 
 ---
 
